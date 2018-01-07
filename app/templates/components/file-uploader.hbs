@@ -1,0 +1,30 @@
+{{!-- <a href="#" id="upload_widget_opener">Upload multiple images</a>
+
+<div id="video"></div> --}}
+
+
+<video id="video" width="400" controls>
+  <source id="video_here">
+  Your browser does not support HTML5 video.
+</video>
+
+<form enctype="multipart/form-data">
+  <input id="super_file" type="file" accept="video/*">
+
+  <br /><br />
+
+  start: <input type="text" id="start-range">
+
+  <br />
+  end: <input type="text" id="end-range">
+
+  <button type="submit" id="do-upload">submit</button>
+</form>
+
+{{!-- TODO:
+  - VALIDAR FILE SIZE (BACK E FRONT)
+  - VALIDAR VIDEO LENGTH (BACK E FRONT)
+  - VALIDAR FORMATO (BACK E FRONT)
+  - ASYNC COM AVISO WEBSOCKET? VERIFICAR TIMEOUTS DO GIGALIXIR - tem timeouts
+  - enviar range de time para o back
+ --}}

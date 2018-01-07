@@ -8,6 +8,11 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('node_modules/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js');
+  app.import('node_modules/blueimp-file-upload/js/vendor/jquery.ui.widget.js');
+  app.import('node_modules/blueimp-file-upload/js/jquery.iframe-transport.js');
+  app.import('node_modules/blueimp-file-upload/js/jquery.fileupload.js');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
